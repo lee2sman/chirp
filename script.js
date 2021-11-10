@@ -24,6 +24,10 @@ let time = hours + ":" + currentDate.getMinutes();
   //add the new div to that tag
   theContentArea.appendChild(theNewDiv);
   theContentArea.appendChild(timeDiv);
+  
+  //play a sound when a post is made
+  let audio = new Audio("alert_chirp.mp3");
+  audio.play();
 }
 
 function addImage() {
@@ -56,6 +60,8 @@ let time = hours + ":" + currentDate.getMinutes();
   theContentArea.appendChild(theNewDiv);
   theContentArea.appendChild(timeDiv);
 
-
+  //play a sound when a post is made
+  let audio = new Audio("alert_image.mp3");
+  audio.play();
 
 }
