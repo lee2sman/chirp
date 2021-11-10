@@ -1,62 +1,85 @@
+/* div{
+	border: 5px solid pink;
+} */
 html,
 body {
-	height: 100%;
-	margin: 0px;
-	padding: 20px;
-	box-sizing: border-box;
+  height: 100%;
+  margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+	/* specifying length from the outside of the box */
+  background-color: #FDFCDC;
 }
 
-body {
+.main {
+  text-align: center;
 }
 
 .paragraph-text {
-	color: blue;
+  color: blue;
 }
 
-.my-button {
-	border: 0px;
-	background-color: #90adc6;
-	padding: 10px;
-	border: 1px solid black;
+.basic-button {
+  border: 0px;
+  background-color: #90adc6;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .grid-container {
-	/*set the positioning of the grid*/
-	/*so that it fills the screen*/
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-
-	/*set display to grid*/
-	display: grid;
-	grid-template-columns: 250px auto;
-	grid-template-rows: 100% 100%;
+  /*set the positioning of the grid*/
+  /*so that it fills the screen*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  /*set display to grid*/
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 100% 100%;
 }
 
 .left-col {
-	/*style left column*/
-	padding: 15px;
-	background-color: #fad02c;
+  /*style left column*/
+  padding: 15px;
+  background-color: #fad02c;
 }
 
 .right-col {
-	/*style right column*/
-	padding: 15px;
-	background-color: coral;
+  /*style right column*/
+  padding: 15px;
+  background-color: coral;
 }
 
 /*format for each chirp message*/
 .auto-div {
-	/*15px on top and botton*/
-	/*0 on left and right*/
-	margin: 15px 0;
+  /*15px on top and botton*/
+  /*0 on left and right*/
+  margin: 15px 0;
+  padding: 10px;
+  background-color: palevioletred;
+  border: 3px solid peachpuff;
+}
 
-	padding: 10px;
+h1 {
+  font-weight: 400;
+  font-size: 15vh;
+  font-family: 'Quicksand', sans-serif;
+}
 
-	background-color: palevioletred;
-	border: 3px solid peachpuff;
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+  min-width: 100px;
+  margin: auto;
+}
+
+#top {
+  margin-bottom: 20vh;
 }
 .right {
 margin: -15px 0;
