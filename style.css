@@ -58,3 +58,10 @@ body {
 	background-color: #FDF0D5;
 	border: 3px solid #669BBC;
 }
+.right {
+margin: -15px 0;
+
+padding: 3px;
+text-align:right;
+
+}
