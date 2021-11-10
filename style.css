@@ -13,7 +13,7 @@ body {
 	color: blue;
 }
 
-.my-button {
+.button {
 	border: 0px;
 	background-color: #90adc6;
 	padding: 10px;
@@ -57,4 +57,32 @@ body {
 
 	background-color: palevioletred;
 	border: 3px solid peachpuff;
+}
+.right {
+margin: -15px 0;
+
+padding: 3px;
+text-align:right;
+
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .right-col {
+    width: 100%;
+  }
+	.left-col {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #fad02c;
+		text-align: center;
+	}
+	.grid-container {
+		grid-template-columns: auto;
+	}
+	.auto-div {
+		width: 75%;
+	}
 }
