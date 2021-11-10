@@ -58,6 +58,13 @@ body {
 	background-color: palevioletred;
 	border: 3px solid peachpuff;
 }
+.right {
+margin: -15px 0;
+
+padding: 3px;
+text-align:right;
+
+}
 
 /* dark mode button */
 .change {
@@ -88,4 +95,5 @@ body {
 	background-color: #bebebe;
 	border: 3px solid #082c6c;
 }
+
 
