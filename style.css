@@ -15,7 +15,7 @@ body {
 
 .my-button {
 	border: 0px;
-	background-color: #90adc6;
+	background-color: #CDDEE9;
 	padding: 10px;
 	border: 1px solid black;
 }
@@ -38,13 +38,13 @@ body {
 .left-col {
 	/*style left column*/
 	padding: 15px;
-	background-color: #fad02c;
+	background-color: #780000;
 }
 
 .right-col {
 	/*style right column*/
 	padding: 15px;
-	background-color: coral;
+	background-color: #FDF0D5;
 }
 
 /*format for each chirp message*/
@@ -55,6 +55,6 @@ body {
 
 	padding: 10px;
 
-	background-color: palevioletred;
-	border: 3px solid peachpuff;
+	background-color: #FDF0D5;
+	border: 3px solid #669BBC;
 }
