@@ -15,15 +15,24 @@
 <i class='fas fa-kiwi-bird' style='font-size:36px'></i>
 
 <br>
+	</head>
+	<body>
 		<div class="grid-container">
 			<div class="left-col">
+				<div id="mode" class="mode" class="OFF">
+					DARK MODE: <span class="change">OFF</span>
+				</div>
 				<p>
 					<input type="text" placeholder="Enter chirp" id="textInput">
 				</p>
-				<button class="my-button" onclick="addDiv(); emptyText()">Add a chirp</button>
+
+				<button class="my-button" onclick="validateText(); emptyText()">Add a chirp</button>
+
 				<p>
 					<input type="text" placeholder="Image url" id="imgInput">
+
 				</p>
+
         
 				<button class="my-button" onclick="addImage(); emptyImg()">Add an image</button>
         <p>
@@ -32,12 +41,19 @@
 <button class="btn"><i class="fa fa-trash"></i></button>       
         </p>
 
+				
+
+
+
 			</div>
 
 			<div class="right-col" id="content-area">
+
 			</div>
 		</div>
-		
+
+
 		<script src="script.js"></script>
+
 	</body>
 </html>
