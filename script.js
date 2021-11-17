@@ -1,3 +1,20 @@
+function validateText() {
+  var x = document.getElementById("textInput").value;
+  if (x == "" || x == null) {
+    alert("Field can't be empty");
+  }else{
+    addDiv();
+  }
+}
+
+function validateImage() {
+  var x = document.getElementById("imgInput").value;
+  if (x == "" || x == null) {
+    alert("Field can't be empty");
+  }else{
+    addImage();
+  }
+}
 
 function addDiv() {
 let currentDate = new Date();
@@ -81,7 +98,7 @@ if(minutes < 10){
     if (event.keyCode === 13) {  //Check for enter key
       event.preventDefault();
       // document.getElementById("my-button").click(); //Should activate the button, but doesn't.
-      addDiv(); //Submit the text
+      validateText(); //Submit the text
       emptyText();  //Clear the input
     }
   });
@@ -90,7 +107,7 @@ if(minutes < 10){
     if (event.keyCode === 13) { //Check for enter key
       event.preventDefault();
       // document.getElementById("my-button").click();  //Should activate the button, but doesn't.
-      addImage();  //Submit the image link
+      validateImage();  //Submit the image link
       emptyImg();  //Clear the input
     }
   });
