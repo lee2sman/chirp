@@ -13,14 +13,14 @@ CHIRP is a software where people could communicate. Chat with your family, frien
 - Enter a Chirp then click the "ADD A CHIRP" button.
 - If you want to add an image, all you have to do is add the URL then click "ADD AN IMAGE"
 
-## LINKS FOR SOUNDS 
-- Basic Game Notification Pack by old_waveplay ( https://freesound.org/people/FoolBoyMedia/sounds/352666/ )
-- Game/App/Movie FX Pack 1 by FoolBoyMedia ( https://freesound.org/people/old_waveplay/sounds/518147/ )
-
-
 ## CREDITS
+
+GPL-3.0 License 
+
 Based on Simple Twit by Daniel Lichtman 
 
 Professor Lee Tusman and Social Software Class Fall 2021.
 
-[Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)
+### SOUNDS
+- [Basic Game Notification Pack](https://freesound.org/people/FoolBoyMedia/sounds/352666/) by old_waveplay, CC BY 3.0 
+- [Game/App/Movie FX Pack 1](https://freesound.org/people/old_waveplay/sounds/518147/) by FoolBoyMedia, CC0 1.0
