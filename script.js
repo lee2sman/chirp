@@ -31,7 +31,6 @@ if(minutes < 10){
 }
   //create a new P tag, save it in a variable
   let theNewDiv = document.createElement("div");
-  let timeDiv = document.createElement("div");
   //add a class to our new div element
 
   let darkMode = document.getElementById("mode");
@@ -43,9 +42,9 @@ if(minutes < 10){
   }
 
   timeDiv.classList.add("right");
+
   //set the text inside the div
   theNewDiv.innerHTML = document.getElementById("textInput").value;
-  timeDiv.innerHTML = time;
 
   //find the right tag to add the div to
   //we used an id of "content-area" for
@@ -54,6 +53,7 @@ if(minutes < 10){
 
   //add the new div to that tag
   theContentArea.appendChild(theNewDiv);
+
   theContentArea.appendChild(timeDiv);
 
   //play a sound when a post is made
@@ -74,9 +74,9 @@ if(minutes < 10){
 }else{
   time = hours + ":" + minutes;
 }
+
   //create a new P tag, save it in a variable
   let theNewDiv = document.createElement("div");
-  let timeDiv = document.createElement("div");
   //add a class to our new div element
 
   let darkMode = document.getElementById("mode");
@@ -85,6 +85,7 @@ if(minutes < 10){
       theNewDiv.classList.add("darkAuto-div");
   } else {
   theNewDiv.classList.add("auto-div");
+
   }
 
   timeDiv.classList.add("right");
@@ -95,7 +96,6 @@ if(minutes < 10){
 
   //set the text inside the div
   theNewDiv.innerHTML = theImgTag;
-  timeDiv.innerHTML = time;
 
   //find the right tag to add the div to
   //we used an id of "content-area" for
@@ -104,6 +104,7 @@ if(minutes < 10){
 
   //add the new div to that tag
   theContentArea.appendChild(theNewDiv);
+
   theContentArea.appendChild(timeDiv);
 
   //play a sound when a post is made
@@ -128,6 +129,7 @@ if(minutes < 10){
       emptyImg();  //Clear the input
     }
   });
+
 
 
   function emptyText()
