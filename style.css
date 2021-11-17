@@ -5,10 +5,10 @@ body {
 	padding: 20px;
 	box-sizing: border-box;
 }
-
-body {
+#logo img{
+	width: 200px;
+	height: 200px;
 }
-
 .paragraph-text {
 	color: blue;
 }
@@ -19,17 +19,14 @@ body {
 	padding: 10px;
 	border: 1px solid black;
 }
-#logo img{
-	width: 200px;
-	height: 200px;
-}
+
 .grid-container {
 	/*set the positioning of the grid*/
 	/*so that it fills the screen*/
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 
 	/*set display to grid*/
@@ -42,6 +39,7 @@ body {
 	/*style left column*/
 	padding: 15px;
 	background-color: #0081a7;
+	height: 100%
 }
 
 .right-col {
@@ -50,6 +48,9 @@ body {
 	background-color: #00afb9;
 }
 
+#content-area {
+	height: 100%;
+}
 /*format for each chirp message*/
 .auto-div {
 	/*15px on top and botton*/
@@ -67,4 +68,34 @@ margin: -15px 0;
 padding: 3px;
 text-align:right;
 
+}
+
+/* dark mode button */
+.change {
+	cursor: pointer;
+	border: 1px solid #555;
+	border-radius: 40%;
+	width: 20px;
+	text-align: center;
+	padding: 5px;
+	margin-left: 8px;
+}
+
+#mode {
+	border: 0px;
+	background-color: lightslategray;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+/* dark mode */
+.darkRight-col {
+	background-color: #878683;
+}
+.darkLeft-col {
+	background-color: #444444;
+}
+.darkAuto-div {
+	background-color: #bebebe;
+	border: 3px solid #082c6c;
 }
