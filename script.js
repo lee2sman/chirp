@@ -24,6 +24,10 @@ let time = hours + ":" + currentDate.getMinutes();
   //add the new div to that tag
   theContentArea.appendChild(theNewDiv);
   theContentArea.appendChild(timeDiv);
+  
+  //play a sound when a post is made
+  let audio = new Audio("alert_chirp.mp3");
+  audio.play();
 }
 
 function addImage() {
@@ -56,6 +60,9 @@ let time = hours + ":" + currentDate.getMinutes();
   theContentArea.appendChild(theNewDiv);
   theContentArea.appendChild(timeDiv);
 
+  //play a sound when a post is made
+  let audio = new Audio("alert_image.mp3");
+  audio.play();
 
   var input = document.getElementById("textInput"); //Get the input box
   input.addEventListener("keyup", function(event) {  //Check keys
@@ -85,5 +92,6 @@ let time = hours + ":" + currentDate.getMinutes();
   {
     document.getElementById("imgInput").value = ""; //Clears input box for image links
   }
+
 
 }
