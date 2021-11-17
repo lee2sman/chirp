@@ -33,7 +33,15 @@ if(minutes < 10){
   let theNewDiv = document.createElement("div");
   let timeDiv = document.createElement("div");
   //add a class to our new div element
+
+  let darkMode = document.getElementById("mode");
+  if (darkMode.className === "mode ON"){
+      theNewDiv.classList.add("auto-div");
+      theNewDiv.classList.add("darkAuto-div");
+  } else {
   theNewDiv.classList.add("auto-div");
+  }
+
   timeDiv.classList.add("right");
   //set the text inside the div
   theNewDiv.innerHTML = document.getElementById("textInput").value;
@@ -70,7 +78,15 @@ if(minutes < 10){
   let theNewDiv = document.createElement("div");
   let timeDiv = document.createElement("div");
   //add a class to our new div element
+
+  let darkMode = document.getElementById("mode");
+  if (darkMode.className === "mode ON"){
+      theNewDiv.classList.add("auto-div");
+      theNewDiv.classList.add("darkAuto-div");
+  } else {
   theNewDiv.classList.add("auto-div");
+  }
+
   timeDiv.classList.add("right");
 
   //create image tag to put into the div
@@ -124,3 +140,39 @@ if(minutes < 10){
 
 
 }
+
+
+$( ".change" ).on("click", function() {
+
+  // check for dark mode class
+  if( $( ".right-col" ).hasClass( "darkRight-col" )) {
+      $( ".right-col" ).removeClass( "darkRight-col" );
+      $( ".change" ).text( "OFF" );
+  } else {
+      $( ".right-col" ).addClass( "darkRight-col" );
+      $( ".change" ).text( "ON" );
+  }
+  if( $( ".left-col" ).hasClass( "darkLeft-col" )) {
+      $( ".left-col" ).removeClass( "darkLeft-col" );
+      $( ".change" ).text( "OFF" );
+  } else {
+      $( ".left-col" ).addClass( "darkLeft-col" );
+      $( ".change" ).text( "ON" );
+  }
+  if( $( ".auto-div" ).hasClass( "darkAuto-div" )) {
+      $( ".auto-div" ).removeClass( "darkAuto-div" );
+      $( ".change" ).text( "OFF" );
+  } else {
+      $( ".auto-div" ).addClass( "darkAuto-div" );
+      $( ".change" ).text( "ON" );
+  }
+
+  // check is dark mode is on/off
+  if( $( ".mode" ).hasClass( "ON" )) {
+      $( ".mode" ).removeClass( "ON" );
+      $( ".mode" ).addclass( "OFF" );
+  } else {
+      $( ".mode" ).removeClass( "ON" );        
+      $( ".mode" ).addClass( "ON" );
+  }
+});

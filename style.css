@@ -6,9 +6,6 @@ body {
 	box-sizing: border-box;
 }
 
-body {
-}
-
 .paragraph-text {
 	color: blue;
 }
@@ -68,4 +65,34 @@ margin: -15px 0;
 padding: 3px;
 text-align:right;
 
+}
+
+/* dark mode button */
+.change {
+	cursor: pointer;
+	border: 1px solid #555;
+	border-radius: 40%;
+	width: 20px;
+	text-align: center;
+	padding: 5px;
+	margin-left: 8px;
+}
+
+#mode {
+	border: 0px;
+	background-color: lightslategray;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+/* dark mode */
+.darkRight-col {
+	background-color: #878683;
+}
+.darkLeft-col {
+	background-color: #444444;
+}
+.darkAuto-div {
+	background-color: #bebebe;
+	border: 3px solid #082c6c;
 }
