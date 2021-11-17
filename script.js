@@ -2,10 +2,16 @@
 function addDiv() {
 let currentDate = new Date();
 let hours = currentDate.getHours();
+let minutes = currentDate.getMinutes();
+let time = 0;
 if(hours>12){
   hours = hours-12;
 }
-let time = hours + ":" + currentDate.getMinutes();
+if(minutes < 10){
+  time = hours + ":0" + minutes;
+}else{
+  time = hours + ":" + minutes;
+}
   //create a new P tag, save it in a variable
   let theNewDiv = document.createElement("div");
   let timeDiv = document.createElement("div");
@@ -24,7 +30,7 @@ let time = hours + ":" + currentDate.getMinutes();
   //add the new div to that tag
   theContentArea.appendChild(theNewDiv);
   theContentArea.appendChild(timeDiv);
-  
+
   //play a sound when a post is made
   let audio = new Audio("alert_chirp.mp3");
   audio.play();
@@ -33,10 +39,16 @@ let time = hours + ":" + currentDate.getMinutes();
 function addImage() {
 let currentDate = new Date();
 let hours = currentDate.getHours();
+let minutes = currentDate.getMinutes();
+let time = 0;
 if(hours>12){
   hours = hours-12;
 }
-let time = hours + ":" + currentDate.getMinutes();
+if(minutes < 10){
+  time = hours + ":0" + minutes;
+}else{
+  time = hours + ":" + minutes;
+}
   //create a new P tag, save it in a variable
   let theNewDiv = document.createElement("div");
   let timeDiv = document.createElement("div");
