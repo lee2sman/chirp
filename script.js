@@ -1,3 +1,20 @@
+function validateText() {
+  var x = document.getElementById("textInput").value;
+  if (x == "" || x == null) {
+    alert("Field can't be empty");
+  }else{
+    addDiv();
+  }
+}
+
+function validateImage() {
+  var x = document.getElementById("imgInput").value;
+  if (x == "" || x == null) {
+    alert("Field can't be empty");
+  }else{
+    addImage();
+  }
+}
 
 function addDiv() {
 let currentDate = new Date();
