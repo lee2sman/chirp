@@ -98,7 +98,7 @@ if(minutes < 10){
     if (event.keyCode === 13) {  //Check for enter key
       event.preventDefault();
       // document.getElementById("my-button").click(); //Should activate the button, but doesn't.
-      validateText(); //Submit the text
+      addDiv(); //Submit the text
       emptyText();  //Clear the input
     }
   });
@@ -107,7 +107,7 @@ if(minutes < 10){
     if (event.keyCode === 13) { //Check for enter key
       event.preventDefault();
       // document.getElementById("my-button").click();  //Should activate the button, but doesn't.
-      validateImage();  //Submit the image link
+      addImage();  //Submit the image link
       emptyImg();  //Clear the input
     }
   });
