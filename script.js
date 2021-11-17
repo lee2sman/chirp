@@ -57,5 +57,33 @@ let time = hours + ":" + currentDate.getMinutes();
   theContentArea.appendChild(timeDiv);
 
 
+  var input = document.getElementById("textInput"); //Get the input box
+  input.addEventListener("keyup", function(event) {  //Check keys
+    if (event.keyCode === 13) {  //Check for enter key
+      event.preventDefault();
+      // document.getElementById("my-button").click(); //Should activate the button, but doesn't.
+      addDiv(); //Submit the text
+      emptyText();  //Clear the input
+    }
+  });
+  var imginput = document.getElementById("imgInput"); //Get the input box
+  imginput.addEventListener("keyup", function(event) {  //Check keys
+    if (event.keyCode === 13) { //Check for enter key
+      event.preventDefault();
+      // document.getElementById("my-button").click();  //Should activate the button, but doesn't.
+      addImage();  //Submit the image link
+      emptyImg();  //Clear the input
+    }
+  });
+
+
+  function emptyText()
+  {
+    document.getElementById("textInput").value = ""; //Clears input box for text
+  }
+  function emptyImg()
+  {
+    document.getElementById("imgInput").value = ""; //Clears input box for image links
+  }
 
 }
