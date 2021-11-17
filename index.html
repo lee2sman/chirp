@@ -6,18 +6,20 @@
 		<title>
 		  CHIRP
 		</title>
+		<link rel="icon" type="image/ico" href="assets/favicon.ico"/>
 	</head>
 	<body>
 		<div class="grid-container">
 			<div class="left-col">
+				<img src="assets/chirpLogo.png" alt="logo" width="200" height="200"/>
 				<p>
 					<input type="text" placeholder="Enter chirp" id="textInput">
 				</p>
-				<button class="my-button" onclick="addDiv()">Add a chirp</button>
+				<button class="my-button" onclick="addDiv(); emptyText()">Add a chirp</button>
 				<p>
 					<input type="text" placeholder="Image url" id="imgInput">
 				</p>
-				<button class="my-button" onclick="addImage()">Add an image</button>
+				<button class="my-button" onclick="addImage(); emptyImg()">Add an image</button>
 
 			</div>
 
@@ -25,13 +27,6 @@
 			</div>
 		</div>
 
-
-
-
-
-
-		<script src="script.js">
-		</script>
-
+		<script src="script.js"></script>
 	</body>
 </html>
