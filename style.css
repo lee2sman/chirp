@@ -23,7 +23,7 @@ body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 
 	/*set display to grid*/
@@ -36,6 +36,7 @@ body {
 	/*style left column*/
 	padding: 15px;
 	background-color: #0081a7;
+	height: 100%
 }
 
 .right-col {
@@ -44,6 +45,9 @@ body {
 	background-color: #00afb9;
 }
 
+#content-area {
+	height: 100%;
+}
 /*format for each chirp message*/
 .auto-div {
 	/*15px on top and botton*/
