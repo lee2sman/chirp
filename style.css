@@ -97,5 +97,49 @@ text-align:right;
 .darkAuto-div {
 	background-color: #bebebe;
 	border: 3px solid #082c6c;
+}
 
+/* fonts for landing */
+h1 {
+  font-weight: 400;
+  font-size: 15vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vh;
+}
+
+/* for landing page */
+#landing{
+  background-color: #FDFCDC;
+}
+
+#landinglogo {
+  min-width: 100px;
+  margin: auto;
+}
+
+#top {
+  margin-bottom: 20vh;
+}
+
+#button {
+  /* font-family: 'Raleway', sans-serif; */
+  padding-bottom: 20px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #00AFB9;
+  text-decoration: underline;
 }
