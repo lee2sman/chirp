@@ -41,7 +41,8 @@ let time = hours + ":" + currentDate.getMinutes();
   timeDiv.classList.add("right");
 
   //create image tag to put into the div
-  theImgTag = "<img src='" + document.getElementById("imgInput").value + "' width = 100 height = 100>";
+  theImgTag = "<img alt= '" + document.getElementById("imgInput").value + "'src='" + document.getElementById("imgInput").value + "' width = 100 height = 100>";
+
 
   //set the text inside the div
   theNewDiv.innerHTML = theImgTag;
@@ -55,7 +56,6 @@ let time = hours + ":" + currentDate.getMinutes();
   //add the new div to that tag
   theContentArea.appendChild(theNewDiv);
   theContentArea.appendChild(timeDiv);
-
 
 
 }
