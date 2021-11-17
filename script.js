@@ -1,11 +1,28 @@
+function validateText() {
+  var x = document.getElementById("textInput").value;
+  if (x == "" || x == null) {
+    alert("Field can't be empty");
+  }else{
+    addDiv();
+  }
+}
+
+function validateImage() {
+  var x = document.getElementById("imgInput").value;
+  if (x == "" || x == null) {
+    alert("Field can't be empty");
+  }else{
+    addImage();
+  }
+}
 
 function addDiv() {
-let currentDate = new Date();
-let hours = currentDate.getHours();
-if(hours>12){
-  hours = hours-12;
-}
-let time = hours + ":" + currentDate.getMinutes();
+   let currentDate = new Date();
+   let hours = currentDate.getHours();
+   if(hours>12){
+   hours = hours-12;
+   }
+  let time = hours + ":" + currentDate.getMinutes();
   //create a new P tag, save it in a variable
   let theNewDiv = document.createElement("div");
   let timeDiv = document.createElement("div");
@@ -24,15 +41,20 @@ let time = hours + ":" + currentDate.getMinutes();
   //add the new div to that tag
   theContentArea.appendChild(theNewDiv);
   theContentArea.appendChild(timeDiv);
+
+  //play a sound when a post is made
+  let audio = new Audio("alert_chirp.mp3");
+  audio.play();
+
 }
 
 function addImage() {
-let currentDate = new Date();
-let hours = currentDate.getHours();
-if(hours>12){
-  hours = hours-12;
-}
-let time = hours + ":" + currentDate.getMinutes();
+   let currentDate = new Date();
+   let hours = currentDate.getHours();
+   if(hours>12){
+   hours = hours-12;
+   }
+  let time = hours + ":" + currentDate.getMinutes();
   //create a new P tag, save it in a variable
   let theNewDiv = document.createElement("div");
   let timeDiv = document.createElement("div");
@@ -56,6 +78,7 @@ let time = hours + ":" + currentDate.getMinutes();
   theContentArea.appendChild(theNewDiv);
   theContentArea.appendChild(timeDiv);
 
-
-
+  //play a sound when a post is made
+  let audio = new Audio("alert_image.mp3");
+  audio.play();
 }
