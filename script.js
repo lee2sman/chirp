@@ -90,7 +90,8 @@ if(minutes < 10){
   timeDiv.classList.add("right");
 
   //create image tag to put into the div
-  theImgTag = "<img src='" + document.getElementById("imgInput").value + "' width = 100 height = 100>";
+  theImgTag = "<img alt= '" + document.getElementById("imgInput").value + "'src='" + document.getElementById("imgInput").value + "' width = 100 height = 100>";
+
 
   //set the text inside the div
   theNewDiv.innerHTML = theImgTag;
@@ -137,7 +138,6 @@ if(minutes < 10){
   {
     document.getElementById("imgInput").value = ""; //Clears input box for image links
   }
-
 
 }
 

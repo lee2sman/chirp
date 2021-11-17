@@ -12,7 +12,7 @@ body {
 
 .my-button {
 	border: 0px;
-	background-color: #fdfcdc;
+	background-color: #CDDEE9;
 	padding: 10px;
 	border: 1px solid black;
 }
@@ -35,14 +35,15 @@ body {
 .left-col {
 	/*style left column*/
 	padding: 15px;
-	background-color: #0081a7;
-	height: 100%
+
+	background-color: #780000;
+
 }
 
 .right-col {
 	/*style right column*/
 	padding: 15px;
-	background-color: #00afb9;
+	background-color: #FDF0D5;
 }
 
 #content-area {
@@ -56,14 +57,15 @@ body {
 
 	padding: 10px;
 
-	background-color: #f07167;
-	border: 3px solid #fdfcdc;
+	background-color: #FDF0D5;
+	border: 3px solid #669BBC;
 }
 .right {
 margin: -15px 0;
 
 padding: 3px;
 text-align:right;
+
 
 }
 
@@ -95,4 +97,5 @@ text-align:right;
 .darkAuto-div {
 	background-color: #bebebe;
 	border: 3px solid #082c6c;
+
 }
