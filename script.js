@@ -172,7 +172,7 @@ $( ".change" ).on("click", function() {
       $( ".mode" ).removeClass( "ON" );
       $( ".mode" ).addclass( "OFF" );
   } else {
-      $( ".mode" ).removeClass( "ON" );        
+      $( ".mode" ).removeClass( "ON" );
       $( ".mode" ).addClass( "ON" );
   }
 });
